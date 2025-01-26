@@ -560,10 +560,12 @@ form button {
     gap: 3rem;
   }
   .partition-left-container {
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
   .partition-right-container {
+    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -818,6 +820,7 @@ form button {
     text-align: center;
   }
   .partition-descriotion {
+    max-width: 500px;
     line-height: 1.5rem;
     text-align: center;
     font-size: 1.1rem;
