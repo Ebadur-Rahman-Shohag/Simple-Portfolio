@@ -11,7 +11,8 @@ body {
 
 header {
   width: 100%;
-  background-image: url("../images/developer.png"), url("../images/header_bg.png");
+  background-image: url("../images/developer.png"),
+    url("../images/header_bg.png");
   background-repeat: no-repeat;
   /* background-position if I use percentage: horizontal(x axis) + vertical(y axis) */
   background-position: 2%, 100% 98%;
@@ -582,6 +583,7 @@ form button {
     text-align: center;
   }
   .partition-descriotion {
+    padding: 1rem;
     line-height: 1.5rem;
     text-align: center;
   }
@@ -592,6 +594,7 @@ form button {
 
   /* Footer CSS */
   footer {
+    margin-top: 3rem;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -890,8 +893,7 @@ form button {
     width: 50%;
     font-size: 1rem;
     line-height: 1.5rem;
-    text-align: inherit; 
-    
+    text-align: inherit;
   }
   form button {
     width: 20%;
