@@ -11,7 +11,7 @@ body {
 
 header {
   width: 100%;
-  background-image: url("/images/developer.png"), url("/images/header_bg.png");
+  background-image: url("../images/developer.png"), url("../images/header_bg.png");
   background-repeat: no-repeat;
   /* background-position if I use percentage: horizontal(x axis) + vertical(y axis) */
   background-position: 2%, 100% 98%;
