@@ -1,0 +1,897 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", serif;
+}
+
+header {
+  width: 100%;
+  background-image: url("/images/developer.png"), url("/images/header_bg.png");
+  background-repeat: no-repeat;
+  /* background-position if I use percentage: horizontal(x axis) + vertical(y axis) */
+  background-position: 2%, 100% 98%;
+}
+/* ---------------------------------------------- */
+/* shared style */
+.dark-1 {
+  color: #181818;
+}
+.dark-2 {
+  color: #474747;
+}
+
+.dark-3 {
+  color: #757575;
+}
+
+.btn-primary {
+  background-color: #fd6e0a;
+  border-radius: 5px;
+  padding: 1.1rem 2rem;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.section-title {
+  color: rgb(24, 24, 24);
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.section-description {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.88rem;
+  text-align: center;
+}
+/* ---------------------------------------------- */
+
+/* -----------Navbar---------------- */
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+nav > h2 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.1rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+/* ------------------Hero Section------------------- */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-details {
+  margin-left: 14rem;
+}
+
+.hero-greetings {
+  color: rgb(71, 71, 71);
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.hero-title {
+  font-size: 5.3rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.hero-description {
+  margin-top: 1.25rem;
+  max-width: 585px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.btn-container {
+  margin-top: 1.88rem;
+  display: flex;
+  gap: 1.88rem;
+}
+
+.btn-contact {
+  background-color: white;
+  color: #fd6e0a;
+  border-radius: 5px;
+  padding: 1.1rem 3.1rem;
+  border: 1px solid #fd6e0a;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.hero-image-container {
+  margin: 2.9rem 2.3rem 0 0;
+}
+.hero-image-container img {
+  width: 100%;
+}
+
+/* --------------About Section---------------- */
+.about-container {
+  width: 100%;
+  max-width: 1140px;
+  min-height: 550px;
+  margin: 8.1rem auto 0 auto;
+  background-color: #fff8f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-details {
+  width: 100%;
+  max-width: 827px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.about-footer {
+  margin-top: 1.88rem;
+  display: flex;
+  gap: 3.1rem;
+  justify-content: space-between;
+  color: rgb(117, 117, 117);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.88rem;
+  text-align: center;
+}
+
+/* Skills Section */
+
+.skills-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 8.1rem;
+}
+
+.skills-title {
+  color: rgb(24, 24, 24);
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.skills-description {
+  width: 100%;
+  max-width: 909px;
+  color: rgb(117, 117, 117);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.88rem;
+  text-align: center;
+  margin-top: 1.88rem;
+}
+
+.skills-card-container {
+  margin-top: 3.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 267px;
+  height: 377px;
+  border-radius: 5px;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+  background: rgb(255, 255, 255);
+  margin-right: 1.5rem;
+}
+
+.card-logo {
+  width: 44px;
+  height: 44px;
+  margin-top: 1.88rem;
+  margin-left: 1.88rem;
+}
+
+.card-title-description-container {
+  margin-top: 1.88rem;
+  margin-left: 1.88rem;
+}
+.card-title {
+  color: rgb(24, 24, 24);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.65rem;
+  text-align: left;
+}
+
+.card-description {
+  max-width: 201px;
+  margin-top: 1.25rem;
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+/* Resume Section */
+.resume-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 8.1rem auto 0 auto; /* 8.1rem top margin */
+}
+
+.resume-title {
+  color: rgb(24, 24, 24);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.partition-container {
+  margin-top: 7rem;
+  display: flex;
+  gap: 4.4rem;
+}
+
+.partition-left-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.partition-right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.partition-title {
+  color: rgb(71, 71, 71);
+  font-size: 1.88rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.partition-details-container {
+  margin-top: 1.88rem;
+}
+.partition-degree {
+  color: rgb(71, 71, 71);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: left;
+}
+.partition-institute {
+  margin-top: 0.6rem;
+  color: rgb(117, 117, 117);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  text-align: left;
+}
+
+.partition-descriotion {
+  margin-top: 1.25rem;
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+hr {
+  /* Dark 05 */
+  border: 1px solid rgb(209, 209, 209);
+  margin-top: 1.88rem;
+}
+
+/* Footer Section*/
+
+footer {
+  margin-top: 7rem;
+  width: 100%;
+  min-height: 780px;
+  background: rgb(255, 248, 243);
+  display: flex;
+}
+
+.left-side {
+  margin-top: 8rem;
+  margin-left: 14rem;
+  width: 50%;
+}
+
+.left-title {
+  color: rgb(24, 24, 24);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: left;
+}
+
+.left-description {
+  max-width: 562px;
+  margin-top: 1.25rem;
+  color: rgb(71, 71, 71);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+.left-image-container {
+  margin-top: 1.88rem;
+}
+
+.left-image-container img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.5rem;
+  border: 1px dashed rgb(173, 168, 168);
+}
+
+.right-side {
+  margin-top: 8rem;
+  width: 50%;
+}
+
+.right-title {
+  max-width: 305px;
+  color: rgb(24, 24, 24);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  text-align: center;
+}
+
+form {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form input {
+  max-width: 461px;
+  padding: 1.25rem;
+  border: none;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: inherit;
+}
+form textarea {
+  max-width: 461px;
+  padding: 1.25rem 3.1rem 5rem 1.25rem;
+  border: none;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  color: rgb(117, 117, 117);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-align: left;
+}
+
+form button {
+  width: 150px;
+  height: 64px;
+}
+
+/* -------------------------------------------------------------- */
+/* responsive CSS code for small screen */
+
+@media screen and (max-width: 576px) {
+  /* shared CSS */
+  .btn-primary {
+    padding: 0.8rem 2.8rem;
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section-description {
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  /* ------------------------ */
+  /* header section */
+
+  header {
+    background-image: none;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* hero section */
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .hero-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .hero-greetings {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-description {
+    margin-top: 1rem;
+    max-width: 300px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .btn-container {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2.8rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .btn-contact {
+    font-size: 1rem;
+  }
+  /* ------------------------------------ */
+  /* About Section */
+  .about-container {
+    margin: 3rem auto 0 auto;
+  }
+  .about-details {
+    max-width: 300px;
+  }
+  .about-footer {
+    margin-top: 1rem;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Skills Section */
+  .skills-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skills-title {
+    font-size: 1.8rem;
+  }
+  .skills-description {
+    max-width: 300px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .skills-card-container {
+    margin-top: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .card {
+    margin-right: 0;
+  }
+  .card-logo {
+    margin-left: 0;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-description {
+    line-height: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  /* Resume Section */
+  .resume-container {
+    margin: 3rem auto 0 auto;
+  }
+  .resume-title {
+    font-size: 1.8rem;
+  }
+  .partition-container {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+  .partition-left-container {
+    align-items: center;
+    text-align: center;
+  }
+  .partition-right-container {
+    align-items: center;
+    text-align: center;
+  }
+  .partition-title {
+    color: rgb(71, 71, 71);
+    font-size: 1.8rem;
+  }
+  .partition-degree {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .partition-institute {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .partition-descriotion {
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  hr {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+
+  /* Footer CSS */
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .left-side {
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .left-description {
+    max-width: 300px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .left-image-container {
+    margin-top: 1.5rem;
+  }
+  .left-image-container img {
+    margin-right: 0.5rem;
+  }
+  .right-side {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  form {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  form input {
+    max-width: 300px;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  form textarea {
+    max-width: 300px;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  form button {
+    width: 100%;
+    height: 50px;
+  }
+}
+
+/* -------------------------------------------------------------- */
+/* responsive CSS code for medium screen */
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  /* shared CSS */
+  .btn-primary {
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    text-align: center;
+  }
+  /* ------------------------ */
+  /* header section */
+
+  header {
+    background-image: none;
+  }
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  /* hero section */
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    /* text-align: center; */
+  }
+  .hero-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 0;
+    text-align: center;
+  }
+  .hero-greetings {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-description {
+    margin-top: 1rem;
+    max-width: 500px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .btn-container {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2.8rem;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .btn-contact {
+    font-size: 1rem;
+  }
+  /* ------------------------------------ */
+  /* About Section */
+  .about-container {
+    margin: 3rem auto 0 auto;
+  }
+  .about-details {
+    max-width: 500px;
+  }
+  .about-footer {
+    margin-top: 1rem;
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 0.5rem;
+  }
+
+  /* Skills Section */
+  .skills-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .skills-title {
+    font-size: 1.8rem;
+  }
+  .skills-description {
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .skills-card-container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .card {
+    margin-right: 0;
+  }
+  .card-logo {
+    margin-left: 0;
+  }
+  .card-title {
+    text-align: center;
+  }
+  .card-description {
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  /* Resume Section */
+  .resume-container {
+    margin: 3rem auto 0 auto;
+  }
+  .resume-title {
+    font-size: 1.8rem;
+  }
+  .partition-container {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 3rem;
+  }
+  .partition-left-container {
+    align-items: center;
+    text-align: center;
+  }
+  .partition-right-container {
+    align-items: center;
+    text-align: center;
+  }
+  .partition-title {
+    color: rgb(71, 71, 71);
+    font-size: 1.8rem;
+  }
+  .partition-degree {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .partition-institute {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .partition-descriotion {
+    line-height: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1rem;
+  }
+  hr {
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .left-side {
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .left-description {
+    max-width: 500px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+  .left-image-container {
+    margin-top: 1.5rem;
+  }
+  .left-image-container img {
+    margin-right: 0.5rem;
+  }
+  .right-side {
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .right-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  form input {
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  form textarea {
+    width: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: inherit; 
+    
+  }
+  form button {
+    width: 20%;
+    height: 50px;
+  }
+}
